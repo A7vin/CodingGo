@@ -1,6 +1,8 @@
 package main
 
-func InsertionSort(arr []int) {
+import "fmt"
+
+func insertionSort(arr []int) {
 	for i := 1; i < len(arr); i++ {
 		key := arr[i]
 		j := i - 1
@@ -11,4 +13,11 @@ func InsertionSort(arr []int) {
 		}
 		arr[j+1] = key
 	}
+}
+
+func main() {
+	arr := []int{9, 5, 1, 4, 3}
+	fmt.Println("Original array:", arr)
+	insertionSort(arr)
+	fmt.Println("Sorted array: ", arr)
 }

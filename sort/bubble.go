@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func BubbleSort(arr []int) {
+func bubbleSort(arr []int) {
 	n := len(arr)
 	for i := 0; i < n; i++ {
 		for j := 0; j < n-i-1; j++ {
@@ -14,7 +14,7 @@ func BubbleSort(arr []int) {
 }
 
 func main() {
-    arr := []int{64, 34, 25, 12, 22, 11, 90}
-    BubbleSort(arr)
-    fmt.Println("Sorted array:", arr)
+	arr := []int{64, 34, 25, 12, 22, 11, 90}
+	bubbleSort(arr)
+	fmt.Println("Sorted array:", arr)
 }
